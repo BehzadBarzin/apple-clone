@@ -3,6 +3,7 @@ import NavBar from "./components/NavBar";
 import Hero from "./components/Hero";
 import Model from "./components/Model";
 import Features from "./components/Features";
+import HowItWorks from "./components/HowItWorks";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Highlights />
       <Model />
       <Features />
+      <HowItWorks />
     </main>
   );
 }
