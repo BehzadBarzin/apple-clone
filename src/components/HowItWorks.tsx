@@ -16,6 +16,7 @@ const HowItWorks = () => {
       scrollTrigger: {
         trigger: "#chip",
         start: "20% bottom",
+        toggleActions: "restart reverse restart reverse",
       },
       opacity: 0,
       scale: 2,
@@ -27,6 +28,7 @@ const HowItWorks = () => {
       ".g_fadeIn",
       {
         opacity: 1,
+        stagger: 0.25,
         y: 0,
         duration: 1,
         ease: "power2.inOut",
@@ -43,7 +45,7 @@ const HowItWorks = () => {
           <img src={chipImg} alt="chip" width={180} height={180} />
         </div>
         {/* Text below chip */}
-        <div className="flex flex-col items-center g_fadeIn">
+        <div className="flex flex-col items-center">
           <h2 className="hiw-title">
             A17 Pro chip.
             <br /> A monster win for gaming.
